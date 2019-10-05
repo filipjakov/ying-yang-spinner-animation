@@ -1,0 +1,25 @@
+{
+  "name": "ying-yang-spinner-animation",
+  "version": "0.1.0",
+  "description": "A pure HTML/CSS rotating ☯ symbol, with its two lobes increasing and decreasing in size.",
+  "main": "index.js",
+  "scripts": {
+    "scss:watch": "node-sass --watch ./ -o css",
+    "scss:compile": "node-sass index.scss -o css",
+    "clean": "rm -rf node_modules && rm -f package-lock.json && rm -rf css",
+    "start": "npm run scss:compile && npx http-server -a localhost -p 1234"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipjakov/ying-yang-spinner-animation.git"
+  },
+  "author": "fbulic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipjakov/ying-yang-spinner-animation/issues"
+  },
+  "homepage": "https://github.com/filipjakov/ying-yang-spinner-animation#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
